@@ -13,7 +13,8 @@ const createConcertsTable = async () => {
             "bandName" VARCHAR(255) NOT NULL,
             "dayOfOperation" VARCHAR(255) NOT NULL,
             "image_url" TEXT NOT NULL,
-            "description" VARCHAR(255) NOT NULL
+            "description" VARCHAR(255) NOT NULL,
+            "url" TEXT NOT NULL
         )
     `
 
@@ -30,14 +31,15 @@ const seedConcertsTable = async () => {
 
     musicHouseData.forEach((concert) => {
         const insertQuery = {
-            text: 'INSERT INTO concerts ("hallName", "concertName", "bandName", "dayOfOperation", "image_url", "description") VALUES ($1, $2, $3, $4, $5, $6)',
+            text: 'INSERT INTO concerts ("hallName", "concertName", "bandName", "dayOfOperation", "image_url", "description", "url") VALUES ($1, $2, $3, $4, $5, $6, $7)',
             values: [
                 concert.hallName,
                 concert.concertName,
                 concert.bandName,
                 concert.dayOfOperation,
                 concert.image_url,
-                concert.description
+                concert.description,
+                concert.url
             ]
         }
 

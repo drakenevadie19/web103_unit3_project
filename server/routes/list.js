@@ -9,7 +9,7 @@ const router = express.Router();
 // });
 router.get('/', ConcertsController.getList)
 
-// router.get('/:concertId', ConcertsController.getConcertById);
+router.get('/locations/:concertId', ConcertsController.getConcertById);
 
 router.get('/events', ConcertsController.getConcertEvents);
 

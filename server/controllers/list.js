@@ -1,3 +1,4 @@
+import { useParams } from 'react-router-dom';
 import { pool } from '../config/database.js'
 
 const getList = async (req, res) => {
@@ -13,6 +14,8 @@ const getList = async (req, res) => {
 } 
 
 const getConcertById = async (req, res) => {
+    const { params } = useParams();
+    console.log(params);
     try {
         const selectQuery = `SELECT hallname, concertName, bandName, dayOfOperation, image_url, description FROM concerts WHERE id = $1`; // fixed "="
         const concertId = req.params.concertId;
@@ -30,8 +33,9 @@ const getConcertById = async (req, res) => {
 const getConcertEvents = async (req, res) => {
     try {
         // Assuming you want all concert events across all halls
-        const selectQuery = `SELECT hallname, concertName, bandName, dayOfOperation, image_url, description FROM concerts`;
+        const selectQuery = `SELECT hallName, concertName, bandName, dayOfOperation, image_url, description, url FROM concerts`;
         const results = await pool.query(selectQuery);
+        console.log(results);
         res.status(200).json(results.rows); // Return all concert events
     } catch (error) {
         res.status(409).json({ error: error.message });
