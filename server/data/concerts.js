@@ -7,8 +7,7 @@ const musicHouseData = [
         dayOfOperation: "2024-10-12",
         image_url: "https://example.com/images/rolling_tones.jpg",
         description: "A high-energy rock concert by The Rolling Tones",
-        submittedBy: "Alice",
-        submittedOn: "2024-10-01"
+        url: "madison-square-garden"
     },
     {
         id: 2,
@@ -18,8 +17,7 @@ const musicHouseData = [
         dayOfOperation: "2024-10-15",
         image_url: "https://example.com/images/smooth_operators.jpg",
         description: "A smooth jazz evening with the Smooth Operators",
-        submittedBy: "Bob",
-        submittedOn: "2024-10-02"
+        url: "madison-square-garden"
     },
     {
         id: 3,
@@ -29,8 +27,7 @@ const musicHouseData = [
         dayOfOperation: "2024-10-18",
         image_url: "https://example.com/images/groove_masters.jpg",
         description: "A funky festival with Groove Masters",
-        submittedBy: "Alice",
-        submittedOn: "2024-10-03"
+        url: "staples-center"
     },
     {
         id: 4,
@@ -40,8 +37,7 @@ const musicHouseData = [
         dayOfOperation: "2024-10-20",
         image_url: "https://example.com/images/high_notes.jpg",
         description: "A pop music extravaganza with The High Notes",
-        submittedBy: "Charlie",
-        submittedOn: "2024-10-04"
+        url: "staples-center"
     },
     {
         id: 5,
@@ -51,8 +47,7 @@ const musicHouseData = [
         dayOfOperation: "2024-10-13",
         image_url: "https://example.com/images/bluebirds.jpg",
         description: "Blues and soul music by The Bluebirds",
-        submittedBy: "Dave",
-        submittedOn: "2024-10-05"
+        url: "chicago-theater"
     },
     {
         id: 6,
@@ -62,8 +57,7 @@ const musicHouseData = [
         dayOfOperation: "2024-10-22",
         image_url: "https://example.com/images/thunderclouds.jpg",
         description: "Rock revival concert by The Thunderclouds",
-        submittedBy: "Eve",
-        submittedOn: "2024-10-06"
+        url: "chicago-theater"
     },
     {
         id: 7,
@@ -73,8 +67,7 @@ const musicHouseData = [
         dayOfOperation: "2024-10-14",
         image_url: "https://example.com/images/lone_star.jpg",
         description: "A country legends concert with Lone Star",
-        submittedBy: "Alice",
-        submittedOn: "2024-10-07"
+        url: "austin-city-music-hall"
     },
     {
         id: 8,
@@ -84,85 +77,78 @@ const musicHouseData = [
         dayOfOperation: "2024-10-16",
         image_url: "https://example.com/images/wanderers.jpg",
         description: "Indie music vibes with The Wanderers",
-        submittedBy: "Bob",
-        submittedOn: "2024-10-08"
+        url: "austin-city-music-hall"
     },
+    // 7 new concerts below
     {
         id: 9,
         hallName: "Madison Square Garden",
-        concertName: "Rock Marathon",
-        bandName: "The Rolling Tones",
-        dayOfOperation: "2024-10-25",
-        image_url: "https://example.com/images/rolling_tones.jpg",
-        description: "A rock marathon featuring The Rolling Tones",
-        submittedBy: "Charlie",
-        submittedOn: "2024-10-09"
+        concertName: "Hip-Hop Bash",
+        bandName: "The Beatmasters",
+        dayOfOperation: "2024-10-17",
+        image_url: "https://example.com/images/beatmasters.jpg",
+        description: "A massive hip-hop event with The Beatmasters",
+        url: "madison-square-garden"
     },
     {
         id: 10,
-        hallName: "Staples Center",
-        concertName: "Jazz Explosion",
-        bandName: "Smooth Operators",
-        dayOfOperation: "2024-10-27",
-        image_url: "https://example.com/images/smooth_operators.jpg",
-        description: "A jazz explosion with the Smooth Operators",
-        submittedBy: "Dave",
-        submittedOn: "2024-10-10"
+        hallName: "Madison Square Garden",
+        concertName: "Electronic Dreams",
+        bandName: "The Synthwave",
+        dayOfOperation: "2024-10-19",
+        image_url: "https://example.com/images/synthwave.jpg",
+        description: "A futuristic electronic concert with The Synthwave",
+        url: "madison-square-garden"
     },
     {
         id: 11,
-        hallName: "Chicago Theatre",
-        concertName: "Soul Jam",
-        bandName: "The Bluebirds",
-        dayOfOperation: "2024-10-30",
-        image_url: "https://example.com/images/bluebirds.jpg",
-        description: "Soul jam session by The Bluebirds",
-        submittedBy: "Eve",
-        submittedOn: "2024-10-11"
+        hallName: "Staples Center",
+        concertName: "Metal Mayhem",
+        bandName: "Steel Titans",
+        dayOfOperation: "2024-10-23",
+        image_url: "https://example.com/images/steel_titans.jpg",
+        description: "An epic metal show by Steel Titans",
+        url: "staples-center"
     },
     {
         id: 12,
-        hallName: "Austin City Music Hall",
-        concertName: "Acoustic Dreams",
-        bandName: "The Wanderers",
-        dayOfOperation: "2024-10-28",
-        image_url: "https://example.com/images/wanderers.jpg",
-        description: "Acoustic music dreamscape with The Wanderers",
-        submittedBy: "Charlie",
-        submittedOn: "2024-10-12"
+        hallName: "Staples Center",
+        concertName: "Alternative Sounds",
+        bandName: "The Rebels",
+        dayOfOperation: "2024-10-24",
+        image_url: "https://example.com/images/rebels.jpg",
+        description: "An alternative rock concert with The Rebels",
+        url: "staples-center"
     },
     {
         id: 13,
-        hallName: "Radio City Music Hall",
-        concertName: "Electric Avenue",
-        bandName: "Neon Nights",
-        dayOfOperation: "2024-10-29",
-        image_url: "https://example.com/images/neon_nights.jpg",
-        description: "An electrifying concert by Neon Nights",
-        submittedBy: "Frank",
-        submittedOn: "2024-10-13"
+        hallName: "Chicago Theatre",
+        concertName: "Classical Harmony",
+        bandName: "The Virtuosos",
+        dayOfOperation: "2024-10-26",
+        image_url: "https://example.com/images/virtuosos.jpg",
+        description: "An evening of classical music with The Virtuosos",
+        url: "chicago-theater"
     },
     {
         id: 14,
-        hallName: "Red Rocks Amphitheatre",
-        concertName: "Folk Horizon",
-        bandName: "The Wildflowers",
-        dayOfOperation: "2024-10-31",
-        image_url: "https://example.com/images/wildflowers.jpg",
-        description: "A serene folk music event with The Wildflowers",
-        submittedBy: "Gina",
-        submittedOn: "2024-10-14"
+        hallName: "Austin City Music Hall",
+        concertName: "Reggae Roots",
+        bandName: "The Islanders",
+        dayOfOperation: "2024-10-27",
+        image_url: "https://example.com/images/islanders.jpg",
+        description: "A night of reggae with The Islanders",
+        url: "austin-city-music-hall"
     },
     {
         id: 15,
-        hallName: "Hollywood Bowl",
-        concertName: "Symphony Under the Stars",
-        bandName: "LA Philharmonic",
-        dayOfOperation: "2024-11-01",
-        image_url: "https://example.com/images/la_philharmonic.jpg",
-        description: "A magical symphony by the LA Philharmonic",
-        submittedBy: "Harry",
-        submittedOn: "2024-10-15"
+        hallName: "Austin City Music Hall",
+        concertName: "Folk Fest",
+        bandName: "The Strummers",
+        dayOfOperation: "2024-10-29",
+        image_url: "https://example.com/images/strummers.jpg",
+        description: "A folk music festival with The Strummers",
+        url: "austin-city-music-hall"
     }
 ];
 

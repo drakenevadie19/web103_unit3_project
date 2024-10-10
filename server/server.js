@@ -25,7 +25,7 @@ else if (process.env.NODE_ENV === 'production') {
 }
 
 // specify the api path for the server to use
-app.use('/api', concertRouter);
+app.use('/', concertRouter);
 
 if (process.env.NODE_ENV === 'production') {
     app.get('/*', (_, res) =>
