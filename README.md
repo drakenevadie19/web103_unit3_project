@@ -34,7 +34,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-<img src='./Web 103 Project 3 Demo 1.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' style="width="80%" aspect-ratio="16/9""/>
+<img src='./Web 103 Project 3 Demo 1.gif' title='Video Walkthrough' />
 
 Here is my PostgreSQL database: 
 <img src='./PostgreSQL database.png' title='Database' width='' alt='Database image' />
