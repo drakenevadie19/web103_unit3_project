@@ -1,7 +1,7 @@
 # web103_unit3_project
-# WEB103 Project 3 - *Name of App Here*
+# WEB103 Project 3 - *City SoundScape*
 
-Submitted by: **Your name here**
+Submitted by: **Thanh Nguyen (Drake) Do**
 
 About this web app: **App description here**
 
@@ -34,7 +34,14 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='./Web 103 Project 3 Demo 1.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' style="width="80%" aspect-ratio="16/9""/>
+
+Here is my PostgreSQL database: 
+<img src='./PostgreSQL database.png' title='Database' width='' alt='Database image' />
+<img src='./PostgreSQL database 2.png' title='Database' width='' alt='Database image' />
+
+Here is the link to my Youtube channel, in which I upload the fullscreen record of the video, incase the GIF is too small
+https://www.youtube.com/watch?v=zFqImuxbe1Q&ab_channel=ThanhNguyenDo 
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  GIF tool here

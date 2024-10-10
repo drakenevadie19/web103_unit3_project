@@ -3,7 +3,7 @@ const LocationsAPI = () => {
     // Get all locations
     getAllLocations = async () => {
         try {
-            const response = await fetch('/api/locations');
+            const response = await fetch('/locations');
             if (!response.ok) {
                 throw new Error('Failed to fetch locations');
             }
